@@ -20,7 +20,7 @@ $('li.pv5.ph2').each(function (i, elem) {
     link = "https://www.linkedin.com" + cs(".result-lockup__actions a").attr('href');
 
     writer.write({ name: name, designation: designation, company: company, link: link })
-    console.log(link);
+    //console.log(link);
 
 });
 
