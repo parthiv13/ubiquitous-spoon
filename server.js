@@ -18,8 +18,9 @@ $('li.pv5.ph2').each(function (i, elem) {
     designation = cs("dd.result-lockup__highlight-keyword > span:nth-child(1)").text().trim();
     company = cs("span.result-lockup__position-company a span:nth-child(1)").text().trim();
     link = "https://www.linkedin.com" + cs(".result-lockup__actions a").attr('href');
+    place = cs("li.result-lockup__misc-item").text().trim();
 
-    writer.write({ name: name, designation: designation, company: company, link: link })
+    writer.write({ name: name, designation: designation, company: company, link: link, place: place })
     //console.log(link);
 
 });
